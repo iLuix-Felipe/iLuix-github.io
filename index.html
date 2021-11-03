@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== Swiper CSS ==== -->
+
+    <!-- ==== Icons ==== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <title>Luiz Felipe</title>
+</head>
+<body>
+    <!-- === Header === -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Luiz Felipe</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                            <i class="uil uil-estate nav_icon"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link"><i class="uil uil-estate nav_icon"></i> Sobre mim</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link"> <i class="uil uil-file-info-alt nav_icon"></i>Habilidades</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link"> <i class="uil uil-briefcase-alt nav_icon"></i> Serviços</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link"><i class="uil uil-brackets-curly nav_icon"></i> Projetos</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link"> <i class="uil uil-message nav_icon"></i> Contatos</a>
+                    </li>
+                </ul>
+                <i id="nav-close" class="uil uil-times nav_close"></i>
+            </div>
+            <div class="nav_btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- === Main === -->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="" class="home_social-icon"><i class="uil uil-github-alt"></i></a>
+                        <a href="" class="home_social-icon"><i class="uil uil-instagram"></i></a>
+                        <a href="" class="home_social-icon"><i class="uil uil-github-alt"></i></a>
+                    </div>
+                <div class="home_img">
+                    <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <image class="home_blob-img" x="12" y="-5" href="img/pfp-luiz-removebg-preview.png"/>
+                        </g>
+                    </svg>
+                </div>
+            
+                <div class="home_data">
+                    <h1 class="home_title">
+                        Olá, Eu sou Luiz!
+                    </h1>
+                    <h3 class="home_subtitle">
+                        Front-End Developer Jr.
+                    </h3>
+                    <p class="home_description">
+                        Experiência em construção de sites e armazenamento de dados, além de experiência em construções de jogos e o básico de design.
+                    </p>
+                    <a href="#contact" class="button button--flex">
+                        Fale comigo<i class="uil uil-message button_icon"></i>
+                    </a>
+                </div>
+            </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scrol-button button--flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Clique aqui</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- About -->
+
+    <section class="about section" id="about">
+        <h2 class="section_title">
+            Sobre mim
+        </h2>
+        <span class="section_subtitle">
+            Breve Introdução
+        </span>
+        <div class="about_container container grid">
+            <img src="img/pfp-luiz.jpg" alt="" class="about_img">
+            <div class="about_data">
+                <p class="about-description">
+                   Cursando o último ano de técnico em Informática no IFRN-JC... Em busca da faculdade e primeiro emprego!
+                </p>
+            </div>
+            <div class="about_info">
+                <div>
+                    <span class="about_info-title">
+                        17
+                    </span>
+                    <span class="about_info-name">
+                        Anos <br> no mundo
+                    </span>
+
+                </div>
+                <div>
+                    <span class="about_info-title">
+                        5+
+                    </span>
+                    <span class="about_info-name">
+                        Projetos <br> Completos
+                    </span>
+                    
+                </div>
+                <div>
+                    <span class="about_info-title">
+                        0
+                    </span>
+                    <span class="about_info-name">
+                        Experiência <br> de trabalho
+                    </span>
+                    
+                </div> 
+            </div>
+                <div class="about_buttons">
+                    <a download="" href="" class="button button--flex">
+                        Curriculo Vitae <i class="uil uil-download-alt button_icon"></i>
+                    </a>
+                </div> 
+        </div>
+    </section>
+
+    <!--  Skills-->
+    <section class="skills section" id="skills">
+        <h2 class="section_title">
+            Habilidades
+        </h2>
+        <span class="section_subtitle">Porcentagens com base em afinidade</span>
+
+        <div class="skills_container container grid">
+            <div class="skills_content skills_close">
+                <div class="skills_header">
+                    <i class="uil uil-brackets-curly skills_icon"></i>
+
+                    <div>
+                        <h1 class="skills_title">Landing Pages</h1>
+                        <span class="skills_subtitle">More than 2 years</span>
+                    </div>
+
+                    <i class="uil uil-angle-down skills_arrow"></i>
+                </div>
+                <div class="skills_list grid">
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                HTML
+                            </h3>
+                            <span class="skills_number">
+                                90%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_html">
+
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                CSS
+                            </h3>
+                            <span class="skills_number">
+                                80%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_css">
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                Sass
+                            </h3>
+                            <span class="skills_number">
+                                80%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_css">
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                Bootstrap
+                            </h3>
+                            <span class="skills_number">
+                                80%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_css">
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                JavaScript
+                            </h3>
+                            <span class="skills_number">
+                                20%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_js">
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills_content skills_close">
+                <div class="skills_header">
+                    <i class="uil uil-monitor skills_icon"></i>
+
+                    <div>
+                        <h1 class="skills_title">Developer Games</h1>
+                        <span class="skills_subtitle">More than 1 years</span>
+                    </div>
+
+                    <i class="uil uil-angle-down skills_arrow"></i>
+                </div>
+                <div class="skills_list grid">
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                Unity
+                            </h3>
+                            <span class="skills_number">
+                                10%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_unity">
+
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="skills_content skills_close">
+                <div class="skills_header">
+                    <i class="uil uil-swatchbook skills_icon"></i>
+
+                    <div>
+                        <h1 class="skills_title">Designer</h1>
+                        <span class="skills_subtitle">More than 2 years</span>
+                    </div>
+
+                    <i class="uil uil-angle-down skills_arrow"></i>
+                </div>
+                <div class="skills_list grid">
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                Figma
+                            </h3>
+                            <span class="skills_number">
+                                25%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_figma">
+
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                Canva
+                            </h3>
+                            <span class="skills_number">
+                                55%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_canva">
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="skills_content skills_close">
+                <div class="skills_header">
+                    <i class="uil uil-keyboard skills_icon"></i>
+
+                    <div>
+                        <h1 class="skills_title">Basic computing</h1>
+                        <span class="skills_subtitle">More than 4 years</span>
+                    </div>
+
+                    <i class="uil uil-angle-down skills_arrow"></i>
+                </div>
+                <div class="skills_list grid">
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                Word
+                            </h3>
+                            <span class="skills_number">
+                                55%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_canva">
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                PowerPoint
+                            </h3>
+                            <span class="skills_number">
+                                55%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_canva">
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">
+                                Excel
+                            </h3>
+                            <span class="skills_number">
+                                20%
+                            </span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_js">
+
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section" id="services">
+        <h2 class="section_title">
+            Serviços
+        </h2>
+        <span class="section_subtitle">Disponíveis no momento</span>
+
+        <div class="services_container container grid">
+            <div class="services_content">
+                <div class="services_card">
+                    <div class="services_card-icon">
+                        <i class="uil uil-mobile-android services_icon"></i>
+                    </div>
+                    <h3 class="services_card-title">
+                        Websites responsíveis
+                    </h3>
+                    <p class="services_card-description">Criação de sites responsivos utilizando diversas ferramentas.</p>
+                </div>
+                <div class="services_card">
+                    <div class="services_card-icon">
+                        <i class="uil uil-sitemap services_icon"></i>
+                    </div>
+                    <h3 class="services_card-title">
+                        Sistemas e aplicativos
+                    </h3>
+                    <p class="services_card-description">Desenvolvimento de sistemas e aplicativos. Agende!</p>
+                </div>
+                <div class="services_card">
+                    <div class="services_card-icon">
+                        <i class="uil uil-apps services_icon"></i>
+                    </div>
+                    <h3 class="services_card-title">
+                        Protótipo de websites
+                    </h3>
+                    <p class="services_card-description">Seu design e sua ideia do seu site pronto e elaborado.</p>
+                </div>
+                <div class="services_card">
+                    <div class="services_card-icon">
+                        <i class="uil uil-server-network services_icon"></i>
+                    </div>
+                    <h3 class="services_card-title">
+                        Hospedagem servidores
+                    </h3>
+                    <p class="services_card-description">Hospede já o seu servidor no melhor plano para você.</p>
+                </div>
+                <div class="services_card">
+                    <div class="services_card-icon">
+                        <i class="uil uil-cog services_icon"></i>
+                    </div>
+                    <h3 class="services_card-title">
+                        Manuntenção computadores
+                    </h3>
+                    <p class="services_card-description">Instalação, limpeza, formatação e outros afazeres.</p>
+                </div>
+                <div class="services_card">
+                    <div class="services_card-icon">
+                        <i class="uil uil-clipboard services_icon"></i>
+                    </div>
+                    <h3 class="services_card-title">
+                        Informática Básica Office
+                    </h3>
+                    <p class="services_card-description">Planilhas, slides ou documentos de texto com Office.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects section" id="projects">
+        <h2 class="section_title">
+            Projetos
+        </h2>
+        <span class="section_subtitle">
+            Trabalhos Recentes
+        </span>
+
+        <div class="projects_container grid">
+            <div class="projects_content">
+                <div class="projects_card">
+                    <div>
+                        <h2 class="projects_card-title"> Barbie</h2>
+                    </div>
+                    <div class="projects-img">
+
+                        <img src="img/lp-barbie.png" alt="" class="projects_card-img">
+                    </div>
+                    <div class="projects_card-buttons">
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-link-alt projects_icon"></i> 
+                             Website
+                        </a>
+
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-github-alt projects_icon"></i>
+                               Github  
+                        </a>
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-search projects_icon"></i>
+                               Infos 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects_card">
+                    <div>
+                        <h2 class="projects_card-title"> Mario</h2>
+                    </div>
+                    <div class="projects-img">
+
+                        <img src="img/lp-mario.png" alt="" class="projects_card-img">
+                    </div>
+                    <div class="projects_card-buttons">
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-link-alt projects_icon"></i> 
+                             Website
+                        </a>
+
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-github-alt projects_icon"></i>
+                               Github  
+                        </a>
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-search projects_icon"></i>
+                               Infos 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects_card">
+                    <div>
+                        <h2 class="projects_card-title"> InfoBasic</h2>
+                    </div>
+                    <div class="projects-img">
+
+                        <img src="img/lp-info-basic.png" alt="" class="projects_card-img">
+                    </div>
+                    <div class="projects_card-buttons">
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-link-alt projects_icon"></i> 
+                             Website
+                        </a>
+
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-github-alt projects_icon"></i>
+                               Github  
+                        </a>
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-search projects_icon"></i>
+                               Infos 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects_card">
+                    <div>
+                        <h2 class="projects_card-title"> Retribua</h2>
+                    </div>
+                    <div class="projects-img">
+
+                        <img src="img/lp-retribua.png" alt="" class="projects_card-img">
+                    </div>
+                    <div class="projects_card-buttons">
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-link-alt projects_icon"></i> 
+                             Website
+                        </a>
+
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-github-alt projects_icon"></i>
+                               Github  
+                        </a>
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-search projects_icon"></i>
+                               Infos 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects_card">
+                    <div>
+                        <h2 class="projects_card-title"> Biocycle Adventure</h2>
+                    </div>
+                    <div class="projects-img">
+
+                        <img src="img/lp-bio-adventure.png" alt="" class="projects_card-img">
+                    </div>
+                    <div class="projects_card-buttons">
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-link-alt projects_icon"></i> 
+                             Website
+                        </a>
+
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-github-alt projects_icon"></i>
+                               Github  
+                        </a>
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-search projects_icon"></i>
+                               Infos 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects_card">
+                    <div>
+                        <h2 class="projects_card-title"> Niver Isadora</h2>
+                    </div>
+                    <div class="projects-img">
+
+                        <img src="img/lp-isa.png" alt="" class="projects_card-img">
+                    </div>
+                    <div class="projects_card-buttons">
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-link-alt projects_icon"></i> 
+                             Website
+                        </a>
+
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-github-alt projects_icon"></i>
+                               Github  
+                        </a>
+                        <a href="" class="button--flex button">
+                            <i class="uil uil-search projects_icon"></i>
+                               Infos 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <span style="margin-top: 20px;" class="section_subtitle github">
+                Repositórios online no Github
+            </span>
+        </div>
+    </section>
+
+    <section class="qualification section" id="qualification">
+        <h2 class="section_title">
+            Qualificações
+        </h2>
+        <span class="section_subtitle">Minha jornada</span>
+
+        <div class="qualification_container container">
+            <div class="qualification_tabs">
+                <div class="qualification_button button--flex qualification_active" data-target='#education'>
+                    <i class="uil uil-graduation-cap qualification_icon"></i>
+                    Educação
+                </div>
+
+                <div class="qualification_button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification_icon"></i>
+                    Trabalho
+                </div>
+            </div>
+
+            <div class="qualification_sections">
+                <div class="qualification_content qualification_active" data-content id="education">
+                    <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">
+                                Ensino Fundamental 2
+                            </h3>
+                            <span class="qualification_subtitle">
+                                Ecac - Escola
+                            </span>
+                            <div class="qualification_calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2014-2017
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+                    <div class="qualification_data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification_title">
+                                Ensino Médio técnico
+                            </h3>
+                            <span class="qualification_subtitle">
+                                IFRN - Instituto
+                            </span>
+                            <div class="qualification_calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2018 - 2021 (andamento)
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">
+                                Tão sonhada faculdade
+                            </h3>
+                            <span class="qualification_subtitle">
+                                ??? - ???
+                            </span>
+                            <div class="qualification_calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022? - ???
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="qualification_content" data-content id="work">
+                    <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">
+                                Aqui nesse perfil
+                            </h3>
+                            <span class="qualification_subtitle">
+                                nunca trabalhamos
+                            </span>
+                            <div class="qualification_calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                ??? - ???
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+                    <div class="qualification_data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                        
+                        <div>
+                            <h3 class="qualification_title">
+                                Aguardando att
+                            </h3>
+                            <span class="qualification_subtitle">
+                                Primeiro emprego?
+                            </span>
+                            <div class="qualification_calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                eae?
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">
+                                Já falei que
+                            </h3>
+                            <span class="qualification_subtitle">
+                                Nunca trabalhei
+                            </span>
+                            <div class="qualification_calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                TEIMOSO!
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project section" id="project">
+        <div class="project_bg">
+            <div class="project_container container grid">
+                <div class="project_data">
+                    <h2 class="project_title">
+                        Você tem um novo projeto?
+                    </h2>
+                    <p class="project_description">
+                        Entra em contato, posso ajudar!
+                    </p>
+                    <a href="#contact" class="button button--flex button--white">
+                        Fale comigo<i class="uil uil-message project_icon button_icon"></i>
+                    </a>
+                </div>
+                <img src="img/pfp-luiz.jpg" alt="" class="project_img">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">
+                        Luiz Felipe
+                    </h1>
+                    <span class="footer_subtitle">
+                        Front-End Jr.
+                    </span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#services" class="footer_link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#projetos" class="footer_link">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contatos</a>
+                    </li>
+                </ul>
+                <div class="footer_socials">
+                       <a href="" class="footer_social">
+                        <i class="uil uil-facebook-f"></i>
+                       </a> 
+                       <a href="" class="footer_social">
+                        <i class="uil uil-instagram"></i>
+                        </a> 
+                        <a href="" class="footer_social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+     <!-- ==== Main JS ==== -->
+     <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ==== GSAP ==== -->
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () =>{
+            var tl = gsap.timeline();
+
+            tl
+            .from(".nav_link", {
+                duration: 1,
+                y:-50,
+                opacity:0,
+                delay: 1,
+                ease: "power3.out"
+            })
+            .from(".nav_logo", {
+                duration: .2,
+                y:-50,
+                opacity:0,
+                delay: 1,
+                ease: "power3.out"
+            })
+            .from(".change-theme", {
+                duration: .2,
+                y:25,
+                opacity:0,
+                delay: 1,
+                ease: "power2.out"
+            })
+           
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.from("#home div", {
+                duration: 1,
+                y:300,
+                opacity:0,
+                stagger:{each: 0.5},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: "#home",
+                }
+            });
+            gsap.from("#about div", {
+                duration: 3,
+                y:300,
+                opacity:0,
+                stagger:{each: 0.5},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: "#about",
+                }
+            });
+            gsap.from("#skills .skills_content", {
+                duration: .5,
+                y:-50,
+                opacity:0,
+                stagger:{each: 0.2},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: ".skills_content",
+                }
+            });
+            gsap.from("#services .services_card", {
+                duration: 3,
+                x:150,
+                opacity:0,
+                stagger:{each: 0.5},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: ".services_card",
+                }
+            });
+            gsap.from("#projects .projects_card", {
+                duration: 3,
+                y:150,
+                opacity:0,
+                stagger:{each: 0.8},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: ".projects_content",
+                }
+            });
+            gsap.from("#qualification .qualification_data", {
+                duration: 1,
+                y:50,
+                opacity:0,
+                stagger:{each: 0.8},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: "#qualification",
+                }
+            });
+            gsap.from("#project div", {
+                duration: 1,
+                x:300,
+                opacity:0,
+                stagger:{each: 0.5},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: "#project",
+                }
+            });
+            gsap.from("#footer", {
+                duration: 1,
+                y:300,
+                opacity:0,
+                stagger:{each: 0.5},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: "#footer",
+                }
+            });
+        });
+    </script>
+
+   
+</body>
+</html>
