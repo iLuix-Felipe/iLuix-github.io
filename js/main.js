@@ -143,3 +143,33 @@ $(document).ready(function() {
         }
     })
 })
+
+
+/* ======= Mudar body =======*/
+
+/*const circles = document.getElementsByName(".colors_circle")
+
+circles.forEach(c => {
+    c.addEventListener('click', mudarCor())
+});*/
+function mudarCor(id){
+
+    if(id == "blue"){
+        document.documentElement.style.setProperty('--hue-color', '230');
+    }
+    else if(id == "green"){
+        document.documentElement.style.setProperty('--hue-color', '150');
+    }
+    else if(id == "yellow"){
+        document.documentElement.style.setProperty('--hue-color', '60');
+    }
+    else if(id == "purple"){
+        document.documentElement.style.setProperty('--hue-color', '260');
+    }
+    else if(id == "orange"){
+        document.documentElement.style.setProperty('--hue-color', '30');
+    }
+    else if(id == "red"){
+        document.documentElement.style.setProperty('--hue-color', '0');
+    }
+}
