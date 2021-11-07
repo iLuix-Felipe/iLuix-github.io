@@ -164,7 +164,7 @@ img{
 }
 
 header.sticky{
-    width: 100%;
+    min-width: 100%;
     background-color: var(--first-color);
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
