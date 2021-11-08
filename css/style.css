@@ -794,6 +794,62 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
 .show-scroll{
     bottom: 5rem;
 }
+.glass{
+    width: auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .37);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.ball-glass{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--first-color), var(--first-color));
+    transform: translateY(-50px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: ball-glass 15s infinite;
+    z-index: -1;
+}
+@keyframes ball-glass{
+    0%{
+        transform: translateY(-50px);
+    }
+    25%{
+        transform: translateY(-110px) translateX(718px);
+      
+    }
+    50%{
+        transform: translateY(-50px) translateX(718px);
+       
+    }
+    75%{
+        transform: translateY(-110px) translateX(0px);
+        
+    }
+    100%{
+        transform: translateY(-50px) translateX(0px);
+    }
+}
+.text-email{
+    font-size: 2.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+   
+}
+.mask {
+    background: linear-gradient(90deg, var(--first-color) 0%, var(--first-color) 30%, #15171a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 
 
@@ -836,6 +892,7 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
         width: 200px;
         margin-bottom: var(--mb-2);
     }
+    
     
     
 }
@@ -885,6 +942,7 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
     #hexagono{
         margin-bottom: 45px;
     }
+    
     
 }
 @media screen and (min-width: 768px){
@@ -1008,6 +1066,10 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
     }
     .home_social{
         transform: translateX(0px);
+    }
+    .text-email{
+        font-size: 1.2rem;
+          
     }
 
 }
