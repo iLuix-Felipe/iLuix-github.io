@@ -844,9 +844,9 @@
             <div class="glass">
 
                 <h3 class="mask text-center text-email">lf06092004@gmail.com</h3>
-            </div>
-            <div class="ball-glass">
-
+                <div class="ball-glass">
+    
+                </div>
             </div>
             
                 
@@ -1017,6 +1017,26 @@
                 ease: "power3.out",
                 scrollTrigger:{
                     trigger: "#project",
+                }
+            });
+            gsap.from("#contact div", {
+                duration: 1,
+                y:150,
+                opacity:0,
+                stagger:{each: 0.8},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: "#contact",
+                }
+            });
+            gsap.from("#colors .colors_circle", {
+                duration: .8,
+                x:25,
+                opacity:0,
+                stagger:{each: 0.8},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: "#colors",
                 }
             });
            

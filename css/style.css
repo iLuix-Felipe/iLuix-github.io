@@ -805,6 +805,9 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
+    height: 8rem;
+    
 }
 .ball-glass{
     position: absolute;
@@ -812,37 +815,43 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
     height: 50px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--first-color), var(--first-color));
-    transform: translateY(-50px);
+    transform: translateY(35px);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    animation: ball-glass 15s infinite;
+    animation: ball-glass 10s infinite;
     z-index: -1;
+    
+    
 }
 @keyframes ball-glass{
     0%{
-        transform: translateY(-50px);
+        transform: translateY(35px);
+        z-index: -1;
     }
     25%{
-        transform: translateY(-110px) translateX(718px);
+        transform: translateY(-35px) translateX(718px);
+        
       
     }
     50%{
-        transform: translateY(-50px) translateX(718px);
+        transform: translateY(35px) translateX(718px);
+        
        
     }
     75%{
-        transform: translateY(-110px) translateX(0px);
+        transform: translateY(-35px) translateX(0px);
         
     }
     100%{
-        transform: translateY(-50px) translateX(0px);
+        transform: translateY(35px) translateX(0px);
+        z-index: -1;
     }
 }
 .text-email{
     font-size: 2.2rem;
     width: 100%;
     text-align: center;
-    padding: 30px 0;
+   
    
 }
 .mask {
