@@ -638,6 +638,72 @@
         </div>
     </section>
 
+    <section class="interfaces section" id="interfaces">
+        <h2 class="section_title">
+            Interfaces para o css
+        </h2>
+        <span class="section_subtitle">
+            Inspiração @DanielSnows
+        </span>
+        <div class="interfaces_container grid">
+            <div class="interface_content">
+                <div class="interface_card">
+                    <img src="img/lp-netflix.png" alt="" class="interface_card-img">
+                    <div class="interface_card-text">
+                        <h3 class="card_text-title">
+                            Netflix
+                        </h3>
+                        <p class="card_text-desc">
+                            Recriação da interface Netflix com o filme dos Vingadores: Ultimato. Curti a formação e criação, bem legal o projeto do incrivel Daniel!
+                        </p>
+                    </div>
+                    <div class="interface_card-footer">
+                        <div> 
+                            <h2 class="footer-title">1/2</h2>
+                            <span class="footer-subtitle">Projetos<span>
+                        </div>
+                        <div>
+                            <h2 class="footer-title">5+</h2>
+                            <span class="footer-subtitle">Likes<span>    
+                        </div>
+                        <div> 
+                            <h2 class="footer-title">18+</h2>
+                            <span class="footer-subtitle">Shares<span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="interface_card">
+                    <img src="img/lp-toystory.png" alt="" class="interface_card-img">
+                    <div class="interface_card-text">
+                        <h3 class="card_text-title">
+                            Toy Story
+                        </h3>
+                        <p class="card_text-desc">
+                            Recriação da interface de linkedin para o toystory, bem bonito, bem legal o resultado. Curti a formação e criação, bem legal o projeto do incrivel Daniel!
+                        </p>
+                    </div>
+                    <div class="interface_card-footer">
+                        <div> 
+                            <h2 class="footer-title">2/2</h2>
+                            <span class="footer-subtitle">Projetos<span>
+                        </div>
+                        <div>
+                            <h2 class="footer-title">12+</h2>
+                            <span class="footer-subtitle">Likes<span>    
+                        </div>
+                        <div> 
+                            <h2 class="footer-title">35+</h2>
+                            <span class="footer-subtitle">Shares<span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="qualification section" id="qualification">
         <h2 class="section_title">
             Qualificações
@@ -841,9 +907,12 @@
                     </div>
                 </a>
             </div>
-            <div class="glass">
+            <div class="absolute">
 
-                <h3 class="mask text-center text-email">lf06092004@gmail.com</h3>
+                <div class="glass">
+    
+                    <h3 class="mask text-center text-email">lf06092004@gmail.com</h3>
+                </div>
                 <div class="ball-glass">
     
                 </div>
@@ -999,6 +1068,16 @@
                     trigger: ".projects_content",
                 }
             });
+            gsap.from("#interfaces .interface_card", {
+                duration: 3,
+                y:150,
+                opacity:0,
+                stagger:{each: 0.5},
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger: ".interface_card",
+                }
+            });
             gsap.from("#qualification .qualification_data", {
                 duration: 1,
                 y:50,
@@ -1029,7 +1108,7 @@
                     trigger: "#contact",
                 }
             });
-            gsap.from("#colors .colors_circle", {
+            gsap.from("#colors .div", {
                 duration: .8,
                 x:25,
                 opacity:0,

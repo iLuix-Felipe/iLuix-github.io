@@ -473,6 +473,71 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
     font-size: 1.5rem;
     margin-right: var(--mb-0-5);
 }
+/*Interfaces*/
+.interface_content{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+}
+.interface_card{
+    max-width: 22rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    
+}
+.interface_card-img{
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 14rem;
+    object-fit: cover;
+}
+.interface_card-text{
+    min-height: 12rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.card_text-title{
+    font-size: var(--h1-font-size);
+    margin-top: var(--mb-1-5);
+}
+.card_text-desc{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    margin-top: var(--mb-0-5);
+    padding: 0rem 1rem 0 1rem;
+}
+.interface_card-footer{
+    width: 100%;
+    background-color: var(--first-color);
+    max-height: 6rem;
+    border-radius: 0 0rem 1rem 1rem;
+    display: flex;
+}
+.interface_card-footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 0.5rem;
+}
+.interface_card-footer div:nth-child(1),.interface_card-footer div:nth-child(2){
+    border-right: 2px solid #fff;
+}
+.footer-title{
+    font-size: var(--h3-font-size);
+}
+.footer-subtitle{
+    font-size: var(--small-font-size);
+    color: #fff;
+}
 
 /*Skills*/
 .skills_container{
@@ -794,6 +859,12 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
 .show-scroll{
     bottom: 5rem;
 }
+.absolute{
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    
+}
 .glass{
     width: auto;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -804,8 +875,6 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
     margin-top: 50px;
     display: flex;
     align-items: center;
-    position: relative;
-    overflow: hidden;
     height: 8rem;
     
 }
@@ -815,7 +884,7 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
     height: 50px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--first-color), var(--first-color));
-    transform: translateY(35px);
+    transform: translateY(-125px);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     animation: ball-glass 10s infinite;
@@ -825,26 +894,26 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
 }
 @keyframes ball-glass{
     0%{
-        transform: translateY(35px);
-        z-index: -1;
+        transform: translateY(-50px);
+       
     }
     25%{
-        transform: translateY(-35px) translateX(718px);
+        transform: translateY(-125px) translateX(718px);
         
       
     }
     50%{
-        transform: translateY(35px) translateX(718px);
+        transform: translateY(-50px) translateX(718px);
         
        
     }
     75%{
-        transform: translateY(-35px) translateX(0px);
+        transform: translateY(-125px) translateX(0px);
         
     }
     100%{
-        transform: translateY(35px) translateX(0px);
-        z-index: -1;
+        transform: translateY(-50px) translateX(0px);
+       
     }
 }
 .text-email{
@@ -1071,6 +1140,9 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
         grid-template-columns: repeat(2, auto);
     }
     .projects_content{
+        grid-template-columns: repeat(1, auto);
+    }
+    .interface_content{
         grid-template-columns: repeat(1, auto);
     }
     .home_social{
