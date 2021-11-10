@@ -144,14 +144,10 @@ $(document).ready(function() {
     })
 })
 
+$(window).on("load",function() {
+    $('.loading').delay(2000).fadeOut("slow");
+  });
 
-/* ======= Mudar body =======*/
-
-/*const circles = document.getElementsByName(".colors_circle")
-
-circles.forEach(c => {
-    c.addEventListener('click', mudarCor())
-});*/
 function mudarCor(id){
 
     if(id == "blue"){
