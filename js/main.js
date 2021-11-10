@@ -145,7 +145,7 @@ $(document).ready(function() {
 })
 
 $(window).on("load",function() {
-    $('.loading').delay(2000).fadeOut("slow");
+    $('.loading').delay(1500).fadeOut("slow");
   });
 
 function mudarCor(id){
@@ -153,8 +153,8 @@ function mudarCor(id){
     if(id == "blue"){
         document.documentElement.style.setProperty('--hue-color', '230');
     }
-    else if(id == "green"){
-        document.documentElement.style.setProperty('--hue-color', '150');
+    else if(id == "pink"){
+        document.documentElement.style.setProperty('--hue-color', '320');
     }
     else if(id == "yellow"){
         document.documentElement.style.setProperty('--hue-color', '60');

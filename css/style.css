@@ -4,7 +4,7 @@
 :root{
     --header-height: 3rem;
 
-    --hue-color: 350;
+    --hue-color: 150;
     /*Colors*/
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -71,7 +71,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    min-height: 100vh;
+    max-height: 100vh;
     background-color: var(--first-color);
     z-index: 999;
 }
@@ -820,8 +820,8 @@ header.sticky .nav_link:hover, header.sticky .nav_toggle:hover, header.sticky .n
  #blue{
      background-color: hsl(230, 69%, 61%);
  }
- #green{
-    background-color: hsl(130, 69%, 61%);
+ #pink{
+    background-color: hsl(320, 69%, 61%);
 }
 #yellow{
     background-color: hsl(60, 69%, 61%);
