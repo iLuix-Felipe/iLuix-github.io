@@ -145,7 +145,7 @@ $(document).ready(function() {
 })
 
 $(window).on("load",function() {
-    $('.loading').delay(1500).fadeOut("slow");
+    $('.loading').delay(3000).fadeOut("slow");
   });
 
 function mudarCor(id){
